@@ -38,10 +38,27 @@
 
 Hugging Face 모델 API 연결로 라이트함을 가져갔습니다. 
 
+![Image](https://github.com/user-attachments/assets/8aa20534-5891-4143-8ca2-e4751906a905)
+
 ### 3️⃣ 에러 처리
 Leffa 모델과 함께, FitDit 모델을 함께 사용할 수 있는 하이브리드 설계로
 
-혹시 모를 00에 대비했습니다
+혹시 모를 API 장애에 대비했습니다
+<br> 모델 서버 다운, 일일 호출량 초과, 네트워크 타임아웃
 
-## 4️⃣ 통합 장바구니
-거의 모든 쇼핑몰에서 사용 가능하도록 
+### 4️⃣ 통합 장바구니
+거의 모든 쇼핑몰에서 사용 가능하도록 통합 상품 데이터 구조를 확보
+
+### 5️⃣ 빠른 속도의 피팅
+
+
+## 기술 스택
+
+| Category             | Stack                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Common**           | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square\&logo=javascript\&logoColor=black) ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square\&logo=eslint\&logoColor=white)                                                                                                                                                                                                                 |
+| **Frontend**         | ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square\&logo=react\&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square\&logo=vite\&logoColor=white) ![CSS Modules](https://img.shields.io/badge/CSS_Modules-000000?style=flat-square\&logo=css3\&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square\&logo=tailwind-css\&logoColor=white) |
+| **Chrome Extension** | ![Chrome Extension](https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square\&logo=google-chrome\&logoColor=white) ![Manifest V3](https://img.shields.io/badge/Manifest_V3-4285F4?style=flat-square\&logo=google-chrome\&logoColor=white)                                                                                                                                                                                 |
+| **AI/ML**            | ![FitDiT](https://img.shields.io/badge/FitDiT-FF6B6B?style=flat-square\&logo=huggingface\&logoColor=white) ![Leffa](https://img.shields.io/badge/Leffa-FF6B6B?style=flat-square\&logo=huggingface\&logoColor=white) ![Gradio](https://img.shields.io/badge/Gradio-FF6B6B?style=flat-square\&logo=huggingface\&logoColor=white)                                                                                                          |
+| **State Management** | ![React Hooks](https://img.shields.io/badge/React_Hooks-61DAFB?style=flat-square\&logo=react\&logoColor=black) ![Chrome Storage](https://img.shields.io/badge/Chrome_Storage-4285F4?style=flat-square\&logo=google-chrome\&logoColor=white)                                                                                                                                                                                             |
+| **Build Tools**      | ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square\&logo=vite\&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square\&logo=npm\&logoColor=white)                                                                                                                                                                                                                                            |
