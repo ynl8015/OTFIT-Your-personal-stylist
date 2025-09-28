@@ -10,49 +10,21 @@
 
 ## OTFIT에 사용된 기술들
 
-- AI (leffa/FiDit)
-  : 대충 여러 모델 테스트해본 결과 가장 우수한 피팅력을 자랑했다는 내용
-- 프론트엔드 (크롬익스텐션)
+### AI (Leffa / FitDiT)  
+Leffa와 FitDiT는 여러 VTON 모델 비교에서 **낮은 FID를 기록하며 우수한 품질**을 보여주었습니다.  
 
+빠른 피팅 경험을 선호하는 사용자 특성에 적합하다고 판단했고,  
 
-## OTFIT's 주목 포인드
-### 1️⃣ Element Picker 구현으로, 더 빠른 상품 선택
-상품을 선택하면(호버) 상품 정보가 바로 추출이 됩니다. 
+그중 **Leffa가 가장 빠른 추론 속도**를 보여 메인으로 사용하며,  
 
-이미지 뿐 아니라, 상품정보와, 가격 URL까지. 
+**FitDiT은 보조 모델**로 세팅했습니다.  
 
-무신사, 지그재그, SSF외 다양한 쇼핑몰을 지원할 수 있도록 HTML 구조를 분석
+<sub>※ FID(Fréchet Inception Distance): 생성된 이미지가 실제 이미지와 얼마나 유사한지를 평가하는 대표적인 지표. 값이 **낮을수록** 실제와 더 유사함을 의미합니다.</sub>
 
-가장 효과적인 셀렉터 알고리즘을 만들었습니다.
-
-![Image](https://github.com/user-attachments/assets/1cba3b33-a593-40a6-8510-3231e6ce0e41)
-
-
-### 2️⃣ 얕은 뎁스, 라이트한 모델
-쇼핑에 방해되지 않도록,
-
-옷 선택 -> 사람 선택 -> 입혀보기
-
-가장 가시적인 플로우만을 남겨놓았습니다.
-
-또한 부하를 줄이기 위해 백엔드를 없애고, 
+### Tech Stack (without Backend)
+부하를 줄이기 위해 백엔드를 없애고, 
 
 Hugging Face 모델 API 연결로 라이트함을 가져갔습니다. 
-
-
-### 3️⃣ 에러 처리
-Leffa 모델과 함께, FitDit 모델을 함께 사용할 수 있는 하이브리드 설계로
-
-혹시 모를 API 장애에 대비했습니다
-<br> 모델 서버 다운, 일일 호출량 초과, 네트워크 타임아웃
-
-### 4️⃣ 통합 장바구니
-거의 모든 쇼핑몰에서 사용 가능하도록 통합 상품 데이터 구조를 확보
-
-### 5️⃣ 빠른 속도의 피팅
-
-
-## 기술 스택
 
 | Category             | Stack                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -61,4 +33,54 @@ Leffa 모델과 함께, FitDit 모델을 함께 사용할 수 있는 하이브�
 | **Chrome Extension** | ![Chrome Extension](https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square\&logo=google-chrome\&logoColor=white) ![Manifest V3](https://img.shields.io/badge/Manifest_V3-4285F4?style=flat-square\&logo=google-chrome\&logoColor=white)                                                                                                                                                                                 |
 | **AI/ML**            | ![FitDiT](https://img.shields.io/badge/FitDiT-FF6B6B?style=flat-square\&logo=huggingface\&logoColor=white) ![Leffa](https://img.shields.io/badge/Leffa-FF6B6B?style=flat-square\&logo=huggingface\&logoColor=white) ![Gradio](https://img.shields.io/badge/Gradio-FF6B6B?style=flat-square\&logo=huggingface\&logoColor=white)                                                                                                          |
 | **State Management** | ![React Hooks](https://img.shields.io/badge/React_Hooks-61DAFB?style=flat-square\&logo=react\&logoColor=black) ![Chrome Storage](https://img.shields.io/badge/Chrome_Storage-4285F4?style=flat-square\&logo=google-chrome\&logoColor=white)                                                                                                                                                                                             |
-| **Build Tools**      | ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square\&logo=vite\&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square\&logo=npm\&logoColor=white)                                                                                                                                                                                                                                            |
+| **Build Tools**      | ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square\&logo=vite\&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square\&logo=npm\&logoColor=white)                                                                                                                                                                                                                                            |  
+
+
+## OTFIT's 주목 포인드
+### 1️⃣ Element Picker 구현으로, 더 빠른 상품 선택
+- 상품을 선택하면(호버) 상품 정보가 바로 추출이 됩니다. 
+
+  이미지 뿐 아니라, 상품정보와, 가격 URL까지. 
+
+  무신사, 지그재그, SSF외 다양한 쇼핑몰을 지원할 수 있도록 HTML 구조를 분석
+
+  가장 효과적인 셀렉터 알고리즘을 만들었습니다.
+
+![Image](https://github.com/user-attachments/assets/1cba3b33-a593-40a6-8510-3231e6ce0e41)
+
+
+### 2️⃣ 얕은 뎁스, 라이트한 모델
+- 쇼핑에 방해되지 않도록,
+
+  옷 선택 -> 사람 선택 -> 입혀보기
+
+  가장 가시적인 플로우만을 남겨놓았습니다.
+
+
+### 3️⃣ 에러 처리
+- Leffa 모델과 함께, FitDit 모델을 함께 사용할 수 있는 하이브리드 설계로
+  
+  혹시 모를 API 장애에 대비했습니다
+<br>   에러 예시 : 모델 서버 다운, 일일 호출량 초과, 네트워크 타임아웃
+
+
+### 4️⃣ 통합 장바구니
+- 거의 모든 쇼핑몰에서 사용 가능하도록 통합 상품 데이터 구조를 확보
+
+
+### 5️⃣ 빠른 속도의 피팅
+
+- **FitDiT**은 1024×768 해상도 이미지 기준으로 **4.57초** 만에 피팅 결과를 생성하며,  
+  기존 VTON 모델 대비 **27% 빠른 처리 속도**를 달성했습니다.
+  
+- **Leffa** 역시 A100 GPU 환경에서 **약 6초 내외**의 추론 시간이 보고되어,  
+  실사용 환경에서 충분히 빠른 경험을 제공할 수 있습니다.
+
+![Image](https://github.com/user-attachments/assets/99921a71-a29c-40fe-a6ce-345f77922d34)
+
+  
+### 8️⃣ 보안 & 프라이버시 고려
+사용자의 개인 사진 데이터는 외부 서버에 저장하지 않고,
+
+Hugging Face API inference 결과만 즉시 반환되도록 설계하여 데이터 보안을 강화했습니다.
+
