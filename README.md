@@ -67,6 +67,7 @@ Hugging Face 모델 API 연결로 라이트함을 가져갔습니다.
 ### 4️⃣ 통합 장바구니
 - 거의 모든 쇼핑몰에서 사용 가능하도록 통합 상품 데이터 구조를 확보
 
+![Image](https://github.com/user-attachments/assets/6bcc37f9-d56d-4f2a-a09b-e392589ab53a)
 
 ### 5️⃣ 빠른 속도의 피팅
 
@@ -84,3 +85,12 @@ Hugging Face 모델 API 연결로 라이트함을 가져갔습니다.
 
 Hugging Face API inference 결과만 즉시 반환되도록 설계하여 데이터 보안을 강화했습니다.
 
+## 👩‍💻 팀 멤버
+
+## 👩‍💻 팀 멤버
+
+| 오은지 | 이유나 |
+|--------|--------|
+| <div align="center"><img width="120" height="120" alt="Eunji Avatar" src="https://github.com/user-attachments/assets/4486b25a-690b-4a87-a760-ea9b38681426" /></div> | <div align="center"><img width="120" height="120" alt="Yuna Avatar" src="https://github.com/user-attachments/assets/e0d29aa6-3e37-49b9-b368-2f742996f3c5" /></div> |
+| <div align="center"><img src="https://img.shields.io/badge/FE-808080?style=for-the-badge&logo=react&logoColor=white" /></div> | <div align="center"><img src="https://img.shields.io/badge/FE-808080?style=for-the-badge&logo=react&logoColor=white" /></div> |
+| <div align="center">[github.com/oeg9176](https://github.com/oeg9176)</div> | <div align="center">[github.com/ynl8015](https://github.com/ynl8015)</div> |
