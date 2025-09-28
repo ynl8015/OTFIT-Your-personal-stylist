@@ -19,41 +19,6 @@
 <br>
 <br>
 
-## 💻 OTFIT에 사용된 기술들
-
-## 🤖 AI (Leffa / FitDiT)  
-Leffa와 FitDiT는 여러 VTON 모델 비교에서 **낮은 FID를 기록하며 우수한 품질**을 보여주었습니다.  
-
-빠른 피팅 경험을 선호하는 사용자 특성에 적합하다고 판단했고,  
-
-그중 **Leffa가 가장 빠른 추론 속도**를 보여 메인으로 사용하며,  
-
-**FitDiT은 보조 모델**로 세팅했습니다.  
-
-<sub>※ FID(Fréchet Inception Distance): 생성된 이미지가 실제 이미지와 얼마나 유사한지를 평가하는 대표적인 지표. 값이 **낮을수록** 실제와 더 유사함을 의미합니다.</sub>
-<br>
-<br>
-<br>
-
-
-## ⚙️ Tech Stack (without Backend)
-부하를 줄이기 위해 백엔드를 없애고, 
-
-Hugging Face 모델 API 연결로 라이트함을 가져갔습니다. 
-
-| Category             | Stack                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Common**           | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square\&logo=javascript\&logoColor=black) ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square\&logo=eslint\&logoColor=white)                                                                                                                                                                                                                 |
-| **Frontend**         | ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square\&logo=react\&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square\&logo=vite\&logoColor=white) ![CSS Modules](https://img.shields.io/badge/CSS_Modules-000000?style=flat-square\&logo=css3\&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square\&logo=tailwind-css\&logoColor=white) |
-| **Chrome Extension** | ![Chrome Extension](https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square\&logo=google-chrome\&logoColor=white) ![Manifest V3](https://img.shields.io/badge/Manifest_V3-4285F4?style=flat-square\&logo=google-chrome\&logoColor=white)                                                                                                                                                                                 |
-| **AI/ML**            | ![FitDiT](https://img.shields.io/badge/FitDiT-FF6B6B?style=flat-square\&logo=huggingface\&logoColor=white) ![Leffa](https://img.shields.io/badge/Leffa-FF6B6B?style=flat-square\&logo=huggingface\&logoColor=white) ![Gradio](https://img.shields.io/badge/Gradio-FF6B6B?style=flat-square\&logo=huggingface\&logoColor=white)                                                                                                          |
-| **State Management** | ![React Hooks](https://img.shields.io/badge/React_Hooks-61DAFB?style=flat-square\&logo=react\&logoColor=black) ![Chrome Storage](https://img.shields.io/badge/Chrome_Storage-4285F4?style=flat-square\&logo=google-chrome\&logoColor=white)                                                                                                                                                                                             |
-| **Build Tools**      | ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square\&logo=vite\&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square\&logo=npm\&logoColor=white)                                                                                                                                                                                                                                            |  
-<br>
-<br>
-<br>
-<br>
-
 # 👍🏻 OTFIT's 주목 포인드
 ### 1️⃣ Element Picker 구현으로, 더 빠른 상품 선택
 - 상품을 선택하면(호버) 상품 정보가 바로 추출이 됩니다. 
@@ -107,6 +72,38 @@ Hugging Face API inference 결과만 즉시 반환되도록 설계하여 데이�
 <br>
 <br>
 
+## 💻 OTFIT에 사용된 기술들
+
+## 🤖 AI (Leffa / FitDiT)  
+Leffa와 FitDiT는 여러 VTON 모델 비교에서 **낮은 FID를 기록하며 우수한 품질**을 보여주었습니다.  
+
+빠른 피팅 경험을 선호하는 사용자 특성에 적합하다고 판단했고,  
+
+그중 **Leffa가 가장 빠른 추론 속도**를 보여 메인으로 사용하며,  
+
+**FitDiT은 보조 모델**로 세팅했습니다.  
+
+<sub>※ FID(Fréchet Inception Distance): 생성된 이미지가 실제 이미지와 얼마나 유사한지를 평가하는 대표적인 지표. 값이 **낮을수록** 실제와 더 유사함을 의미합니다.</sub>
+<br>
+<br>
+<br>
+
+
+## ⚙️ Tech Stack (without Backend)
+부하를 줄이기 위해 백엔드를 없애고, 
+
+Hugging Face 모델 API 연결로 라이트함을 가져갔습니다. 
+
+| Category             | Stack                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Common**           | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square\&logo=javascript\&logoColor=black) ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square\&logo=eslint\&logoColor=white)                                                                                                                                                                                                                 |
+| **Frontend**         | ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square\&logo=react\&logoColor=black) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square\&logo=vite\&logoColor=white) ![CSS Modules](https://img.shields.io/badge/CSS_Modules-000000?style=flat-square\&logo=css3\&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square\&logo=tailwind-css\&logoColor=white) |
+| **Chrome Extension** | ![Chrome Extension](https://img.shields.io/badge/Chrome_Extension-4285F4?style=flat-square\&logo=google-chrome\&logoColor=white) ![Manifest V3](https://img.shields.io/badge/Manifest_V3-4285F4?style=flat-square\&logo=google-chrome\&logoColor=white)                                                                                                                                                                                 |
+| **AI/ML**            | ![FitDiT](https://img.shields.io/badge/FitDiT-FF6B6B?style=flat-square\&logo=huggingface\&logoColor=white) ![Leffa](https://img.shields.io/badge/Leffa-FF6B6B?style=flat-square\&logo=huggingface\&logoColor=white) ![Gradio](https://img.shields.io/badge/Gradio-FF6B6B?style=flat-square\&logo=huggingface\&logoColor=white)                                                                                                          |
+| **State Management** | ![React Hooks](https://img.shields.io/badge/React_Hooks-61DAFB?style=flat-square\&logo=react\&logoColor=black) ![Chrome Storage](https://img.shields.io/badge/Chrome_Storage-4285F4?style=flat-square\&logo=google-chrome\&logoColor=white)                                                                                                                                                                                             |
+| **Build Tools**      | ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square\&logo=vite\&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square\&logo=npm\&logoColor=white)                                                                                                                                                                                                                                            |  
+<br>
+<br>
 
 # 👩‍💻 팀 멤버
 
