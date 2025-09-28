@@ -5,6 +5,8 @@
 <br> <div align="center"> <strong>피팅룸만이 답이 아니다!<br> AI 기반 가상 피팅으로, 내 사진 속 새로운 스타일을 경험하세요</strong> <br><br> 설치하기 : https://chromewebstore.google.com/detail/otfit/cfdepeimbnkpaebbcfebmdgfnfanlckp </div> <br>
 <br>
 <br>
+### 우수한 피팅력을 자랑합니다.
+<img width="786" height="604" alt="Image" src="https://github.com/user-attachments/assets/7832ec29-c31b-4e26-8091-46dab566b7b6" />
 <br>
 <br>
 
