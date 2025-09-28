@@ -1,6 +1,6 @@
 ![Image](https://github.com/user-attachments/assets/9d61f0c8-5657-487d-bec6-b7e75300bfd8)
 
-## OTFIT 서비스 소개
+# 🛍️ OTFIT 서비스 소개
 
 <br> <div align="center"> <strong>피팅룸만이 답이 아니다!<br> AI 기반 가상 피팅으로, 내 사진 속 새로운 스타일을 경험하세요</strong> <br><br> 설치하기 : https://chromewebstore.google.com/detail/otfit/cfdepeimbnkpaebbcfebmdgfnfanlckp </div> <br>
 <br>
@@ -8,7 +8,7 @@
 <br>
 <br>
 
-## 서비스 기획배경
+## 💡 서비스 기획배경
 <div align="center"> 온라인 쇼핑은 편리하지만, <br> “나한테 어울릴까?” “사이즈가 맞을까?” <br> 이런 불안 때문에 주저하는 경우가 많습니다. <br><br> <img width="600" height="200" alt="Image" src="https://github.com/user-attachments/assets/a7f99da3-9129-4fd3-97d0-e64ebc2b49e7" /> <br><br> 특히 신체적, 체형적 제약이 있는 경우, <br> 해외직구를 하는 경우 <br> 옷을 직접 입어보기는 더더욱 어렵습니다. <br><br> <strong>그래서,</strong> <br><br> 누구나 자유롭게, 온라인에서도 <br> 안전하고 즐겁게 패션을 시도할 수 있도록 – <br><br> <strong>AI 기반 가상 피팅 Chrome Extension, OTFIT 입니다. </strong> </div>
 
 <br>
@@ -16,9 +16,9 @@
 <br>
 <br>
 
-## OTFIT에 사용된 기술들
+## 💻 OTFIT에 사용된 기술들
 
-### AI (Leffa / FitDiT)  
+## 🤖 AI (Leffa / FitDiT)  
 Leffa와 FitDiT는 여러 VTON 모델 비교에서 **낮은 FID를 기록하며 우수한 품질**을 보여주었습니다.  
 
 빠른 피팅 경험을 선호하는 사용자 특성에 적합하다고 판단했고,  
@@ -33,7 +33,7 @@ Leffa와 FitDiT는 여러 VTON 모델 비교에서 **낮은 FID를 기록하며 
 <br>
 
 
-### Tech Stack (without Backend)
+## ⚙️ Tech Stack (without Backend)
 부하를 줄이기 위해 백엔드를 없애고, 
 
 Hugging Face 모델 API 연결로 라이트함을 가져갔습니다. 
@@ -51,7 +51,7 @@ Hugging Face 모델 API 연결로 라이트함을 가져갔습니다.
 <br>
 <br>
 
-## OTFIT's 주목 포인드
+# 👍🏻 OTFIT's 주목 포인드
 ### 1️⃣ Element Picker 구현으로, 더 빠른 상품 선택
 - 상품을 선택하면(호버) 상품 정보가 바로 추출이 됩니다. 
 
@@ -103,10 +103,9 @@ Hugging Face API inference 결과만 즉시 반환되도록 설계하여 데이�
 <br>
 <br>
 <br>
-<br>
-<br>
 
-## 👩‍💻 팀 멤버
+
+# 👩‍💻 팀 멤버
 
 | 오은지 | 이유나 |
 |--------|--------|
