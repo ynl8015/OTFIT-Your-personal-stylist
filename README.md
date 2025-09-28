@@ -38,7 +38,7 @@
 
 Hugging Face 모델 API 연결로 라이트함을 가져갔습니다. 
 
-![Image](https://github.com/user-attachments/assets/8aa20534-5891-4143-8ca2-e4751906a905)
+
 
 ### 3️⃣ 에러 처리
 Leffa 모델과 함께, FitDit 모델을 함께 사용할 수 있는 하이브리드 설계로
