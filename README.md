@@ -25,7 +25,8 @@
 
 가장 효과적인 셀렉터 알고리즘을 만들었습니다.
 
-![Image](https://github.com/user-attachments/assets/72df8bde-1df5-49eb-ab82-69d512b82a0f)
+![Image](https://github.com/user-attachments/assets/1cba3b33-a593-40a6-8510-3231e6ce0e41)
+
 
 ### 2️⃣ 얕은 뎁스, 라이트한 모델
 쇼핑에 방해되지 않도록,
@@ -37,7 +38,6 @@
 또한 부하를 줄이기 위해 백엔드를 없애고, 
 
 Hugging Face 모델 API 연결로 라이트함을 가져갔습니다. 
-
 
 
 ### 3️⃣ 에러 처리
