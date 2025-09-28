@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "OTFIT",
+  "version": "1.0",
+  "description": "모든 불편함을 벗고 자유롭게 쇼핑하는 배리어프리 가상 피팅 솔루션 & 장바구니를 지원하는 익스텐션",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "host_permissions": ["*://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

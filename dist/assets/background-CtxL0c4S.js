@@ -1,0 +1,1 @@
+chrome.runtime.onMessage.addListener((e,c,r)=>{if(console.log("Background received message:",e),e.action==="ADD_TO_CART"||e.action==="tryOn"){const o=e.product||e.data;chrome.storage.local.set({selectedProduct:o},()=>{console.log("✅ 상품 데이터 저장 완료!",o)}),chrome.tabs.query({active:!0,currentWindow:!0},t=>{t[0]&&chrome.tabs.sendMessage(t[0].id,{action:"selectionComplete"})})}});

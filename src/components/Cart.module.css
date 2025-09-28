@@ -1,0 +1,376 @@
+.container {
+  padding: 0.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.count {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.mallGroup {
+  margin-bottom: 2rem;
+}
+
+.mallTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.brandGroup {
+  margin-bottom: 1.5rem;
+}
+
+.brandTitle {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.groupedItems {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  position: relative;
+  border: 1px solid #f1f5f9;
+}
+
+.imageSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.25rem;
+  padding: 0.25rem;
+  background: #f9fafb;
+  position: relative;
+}
+
+.imageWrapper {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #f9fafb;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fittingImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.noFitting,
+.notAvailable {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+  background: #f3f4f6;
+  border-radius: 0.5rem;
+}
+
+.infoSection {
+  padding: 0.75rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.productName {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.productPrice {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.buyButton,
+.deleteButton {
+  padding: 0.5rem 1.25rem;
+  border-radius: 60px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.buyButton {
+  background: #3b82f6;
+  color: white;
+}
+
+.buyButton:hover {
+  transform: translateY(-1px);
+}
+
+.deleteButton {
+  background: #f8fafc;
+  color: #64748b;
+  border: 1px solid #e2e8f0;
+}
+
+.deleteButton:hover {
+  transform: translateY(-1px);
+}
+
+.emptyCart {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #f9fafb;
+  border-radius: 0.75rem;
+}
+
+.emptyText {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #1f2937;
+  margin: 0;
+}
+
+.emptyHint {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0.5rem 0 0 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  /* padding: 1rem 1.25rem; */
+  /* background: white; */
+  /* border: 1px solid #f1f5f9; */
+  /* border-radius: 16px; */
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); */
+}
+
+.selectControls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.selectButton {
+  padding: 0.5rem 1.25rem;
+  border-radius: 60px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid #e5e7eb;
+  background: white;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.selectButton:hover {
+  background: #f8fafc;
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.totalPrice {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.checkboxWrapper {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  border: 1px solid #e5e7eb;
+  accent-color: #3b82f6;
+  display: block;
+  margin: 0;
+}
+
+.selectAllContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.selectAllText {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  /* gap: 1rem; */
+}
+
+.moodboardButton {
+  padding: 0.5rem 1.25rem;
+  background-color: white;
+  color: #3b82f6;
+  border: 1px solid #3b82f6;
+  border-radius: 60px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.moodboardButton:hover {
+  background-color: #3b82f6;
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* .moodboardButton:disabled {
+  background-color: #e5e7eb;
+  cursor: not-allowed;
+} */
+
+.tryFittingButton {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tryFittingButton:hover {
+  background-color: #2563eb;
+}
+
+.loading {
+  position: relative;
+}
+
+.loading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.loading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  z-index: 2;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

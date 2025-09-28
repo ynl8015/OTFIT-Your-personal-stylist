@@ -1,0 +1,143 @@
+.container {
+  width: 100%;
+  min-height: 600px;
+  max-height: 600px;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #1f2937;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+.nav {
+  display: flex;
+  background-color: #f3f4f6;
+  border-radius: 99px;
+  margin: 0.75rem;
+  padding: 0.25rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 3rem;
+}
+
+.tabSlider {
+  position: absolute;
+  height: calc(100% - 8px);
+  width: calc(50% - 4px);
+  background-color: #3b82f6;
+  border-radius: 99px;
+  transition: transform 0.3s ease;
+  top: 4px;
+  left: 4px;
+  transform: translateX(0);
+}
+
+.tab {
+  flex: 1;
+  padding: 0.75rem 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  background: transparent;
+  position: relative;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.tabActive {
+  color: white;
+}
+
+.tabInactive {
+  color: #6b7280;
+}
+
+.main {
+  flex: 1;
+  padding: 0.5rem 1rem 1rem;
+  overflow-y: auto;
+}
+
+.content {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.footer {
+  background-color: white;
+  border-top: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  margin-top: auto;
+}
+
+.credits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.copyright {
+  color: #6b7280;
+  margin: 0;
+}
+
+.poweredBy {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #9ca3af;
+}
+
+.creditLink {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.creditLink:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.creditSeparator {
+  color: #d1d5db;
+}
+
+.termsButton {
+  background: none;
+  border: none;
+  color: #6b7280;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  font-size: 0.875rem;
+}
+
+.termsButton:hover {
+  color: #4b5563;
+}
